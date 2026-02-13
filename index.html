@@ -12,6 +12,24 @@
 body {
   box-sizing: border-box;
 }
+   .cabecalho{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:20px;
+  background:#003b71;
+  padding:15px 20px;
+  border-radius:15px;
+  margin-bottom:20px;
+  color:white;
+}
+
+.logo-senai{
+  height:60px;
+  background:white;
+  padding:8px 12px;
+  border-radius:10px;
+}
 
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap');
 
@@ -51,7 +69,12 @@ body {
       <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"></path>
       </svg>
      </div>
-     <h1 id="document-title" class="text-3xl md:text-4xl font-bold mb-2" style="color: #1e3a5f;">PLANO DE AÇÃO</h1>
+     <div class="cabecalho">
+  <img src="imagens/logo-senai.png" alt="Logo SENAI" class="logo-senai">
+  <h1 id="document-title" class="text-3xl md:text-4xl font-bold mb-0">
+    PLANO DE AÇÃO
+  </h1>
+</div>
      <div class="w-24 h-1 mx-auto rounded-full" style="background-color: #3b82f6;"></div>
     </div><!-- Escopo Section -->
     <div class="rounded-2xl shadow-lg mb-8 overflow-hidden" style="background-color: #ffffff; border: 2px solid #e2e8f0;">
@@ -519,4 +542,5 @@ if (window.elementSdk) {
 }
 </script>
  <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9cd4d146a28f27e7',t:'MTc3MDk5MDg2NC4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+
 </html>
