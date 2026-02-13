@@ -12,24 +12,35 @@
 body {
   box-sizing: border-box;
 }
-  .cabecalho{
-  display:flex;
+ .cabecalho{
+  display:grid;
+  grid-template-columns: auto 1fr auto;
   align-items:center;
-  justify-content:center;
-  gap:16px;
   background:#003b71;
-  padding:14px 18px;
-  border-radius:14px;
-  margin:10px auto 14px auto;
+  padding:16px 24px;
+  border-radius:16px;
+  margin:20px auto;
 }
 
-.logo-senai{
-  height:52px;
+.titulo-centro{
+  text-align:center;
+}
+
+.titulo-centro h1{
+  margin:0;
+  color:#fff;
+  font-size:28px;
+  letter-spacing:1px;
+}
+
+.logo{
+  height:55px;
   width:auto;
   background:#fff;
-  padding:6px 10px;
+  padding:6px 12px;
   border-radius:10px;
 }
+
 
 
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap');
@@ -66,10 +77,6 @@ body {
   <div class="app-container h-full w-full overflow-auto" id="main-container" style="background-color: #f8fafc;">
    <div class="max-w-4xl mx-auto p-6 md:p-10"><!-- Header -->
     <div class="text-center mb-8">
-     <div class="inline-flex items-center justify-center w-16 h-16 rounded-2xl mb-4" style="background-color: #1e3a5f;">
-      <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"></path>
-      </svg>
-     </div>
      <div class="cabecalho">
   <img src="imagens/logo-senai.png" alt="Logo SENAI" class="logo-senai">
   <h1 id="document-title" class="text-3xl md:text-4xl font-bold mb-0">
@@ -545,4 +552,5 @@ if (window.elementSdk) {
  <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9cd4d146a28f27e7',t:'MTc3MDk5MDg2NC4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
 
 </html>
+
 
